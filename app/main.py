@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from mangum import Mangum
+from fastapi.middleware.wsgi import WSGIMiddleware
 
 from api.v1.api import router as api_router
 
